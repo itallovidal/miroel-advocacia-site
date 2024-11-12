@@ -3,14 +3,15 @@ import {Hero} from "./hero/hero.tsx";
 import {useEffect, useRef} from "react";
 import {About} from "./about/about.tsx";
 import {ServicesDetails} from "./servicesDetails/services-details.tsx";
+import {Contact} from "./contact/contact.tsx";
 
 export function Home() {
   const { hash } = useLocation()
   const heroRef = useRef<HTMLDivElement>(null)
   const aboutRef = useRef<HTMLDivElement>(null)
   const servicesDetailsRef = useRef<HTMLDivElement>(null)
+  const contactRef = useRef<HTMLDivElement>(null)
   // const servicesRef = useRef<HTMLDivElement>(null)
-  // const courseRef = useRef<HTMLDivElement>(null)
   // const teamRef = useRef<HTMLDivElement>(null)
 
   const refMap = {
@@ -18,7 +19,7 @@ export function Home() {
     '#about': aboutRef,
     '#serviceDetails': servicesDetailsRef,
     // '#services': servicesRef,
-    // '#course': courseRef,
+    // '#contact': contactRef,
     // '#team': teamRef,
   }
 
@@ -34,8 +35,8 @@ export function Home() {
       <Hero ref={heroRef} />
       <About ref={aboutRef} />
       <ServicesDetails ref={servicesDetailsRef} />
+      <Contact ref={contactRef} />
       {/*<Services ref={servicesRef} />*/}
-      {/*<Course ref={courseRef} />*/}
       {/*<Team ref={teamRef} />*/}
     </div>
   )

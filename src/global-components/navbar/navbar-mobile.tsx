@@ -29,7 +29,7 @@ export function NavbarMobile() {
         >
           Serviços
         </Link>
-        <Link onClick={() => setIsOpen((prev) => !prev)} to={'/#course'}>
+        <Link onClick={() => setIsOpen((prev) => !prev)} to={'/#contact'}>
           Tráfego Pago
         </Link>
         <Link onClick={() => setIsOpen((prev) => !prev)} to={'/#about'}>

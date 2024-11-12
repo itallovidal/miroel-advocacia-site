@@ -13,7 +13,7 @@ export function NavbarDesktop() {
         <nav>
           <Link to={'/#home'}>Início</Link>
           <Link to={'/#serviceDetails'}> Serviços</Link>
-          <Link to={'/#course'}> Tráfego Pago</Link>
+          <Link to={'/#contact'}> Tráfego Pago</Link>
           <Link to={'/#about'}>Sobre</Link>
         </nav>
       </div>
