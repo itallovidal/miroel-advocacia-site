@@ -1,24 +1,31 @@
-import { HeroContent, HeroWrapper, Watermark } from './style.ts'
-import logoAlfa from '../../../assets/alfa_omega_logo_escrito.svg'
-import watermarkLogo from '../../../assets/watermark.svg'
+import {HeroContent, HeroFooter, HeroWrapper, Watermark} from './style.ts'
 import { forwardRef } from 'react'
+import heroBackground from '../../../assets/images/hero-background.jpg'
 
 export const Hero = forwardRef<HTMLDivElement>((_, ref) => {
   return (
     <HeroWrapper ref={ref} id={'home'} background={'black'}>
       <div>
         <HeroContent>
-          <picture>
-            <img src={logoAlfa} alt="" />
-          </picture>
           <p>
-            Especializada em serviços de tráfego pago, dedicando estratégias de
-            marketing digital direcionadas para aumentar a visibilidade e o
-            alcance do seu negócio na internet.
+            Precisa de Soluções Jurídicas para sua Empresa?
           </p>
+          <h1>Nós temos a solução!</h1>
         </HeroContent>
+        <HeroFooter>
+          <div>
+            <p>Localização</p>
+            <h3>Endereço: Rua Rosalina Terra, 429 casa 3 Portinho - Cabo Frio RJ</h3>
+          </div>
+
+          <div>
+            <p>Whatsapp</p>
+            <h3>22 99988-1123</h3>
+          </div>
+
+        </HeroFooter>
         <Watermark>
-          <img src={watermarkLogo} alt="" />
+          <img src={heroBackground} alt="" />
         </Watermark>
       </div>
     </HeroWrapper>
