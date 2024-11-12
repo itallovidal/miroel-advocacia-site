@@ -1,31 +1,36 @@
 import React, { forwardRef } from 'react'
-import Profile from '../../../assets/profile.png'
+import Profile from '../../../assets/images/profile.png'
 import { AboutDetails, AboutWrapper, ProfileWrapper } from './style.ts'
 
 export const About = forwardRef<HTMLDivElement>((_, ref) => {
   return (
     <AboutWrapper ref={ref} id={'about'} background={'gray'}>
       <div>
+        <AboutDetails>
+          <div>
+            <h2>Dr. Miroel Paulino</h2>
+            <p>
+              O escritório Miroel Paulino Advocacia com mais de 15 anos de experiência representa os interesses de
+              pessoa jurídica e física, tendo como sua principal característica o acompanhamento personalizado de seus
+              clientes.
+            </p>
+          </div>
+
+          <div>
+            <h2>Sobre a nossa empresa</h2>
+            <p>
+              Somos um dos maiores escritórios de advocacia da região, composto inteiramente por advogados experientes e apaixonados pelo trabalho. Sabemos o que é preciso para elaborar e apresentar casos sólidos e convincentes, e é exatamente isso que fazemos. De forma vigorosa e sincera, enfrentamos os desafios mais complexos e conquistamos seus objetivos com bastante criatividade e determinação. Oferecemos ótimos serviços de assistência jurídica a empresas e pessoas físicas. Nossos advogados são os profissionais mais qualificados de suas áreas e oferecem as melhores soluções possíveis aos nossos clientes.
+            </p>
+          </div>
+        </AboutDetails>
+
         <ProfileWrapper>
           <picture>
             <img src={Profile} alt={'profile.png'} />
           </picture>
-
-          <span>Camila Paulino</span>
         </ProfileWrapper>
 
-        <AboutDetails>
-          <h1>Professora</h1>
-          <p>
-            Mestre em Educação; Especialista em Análise, Projeto e Gerência de
-            Sistemas. Especialista em Docência do Ensino Superior e Graduada em
-            Ciências da Computação Certificada pela APMG –US em COBIT5 e ITIL
-            V3. No âmbito empresarial, desenvolvedora, Analista de sistema,
-            Analista de negócio, Gerente de projetos e Consultora de Tecnologia,
-            atuando em várias empresas como TV Globo -Living Consultoria.
-            Atualmente é professora UVA e IBMEC
-          </p>
-        </AboutDetails>
+
       </div>
     </AboutWrapper>
   )

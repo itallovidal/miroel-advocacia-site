@@ -13,7 +13,7 @@ export const globalStyles = globalCss({
     },
 
     p: {
-        fontSize: '1.2rem',
+        fontSize: '1rem',
         lineHeight: '2rem',
     },
 
@@ -119,7 +119,8 @@ export const Button = styled('button', {
 
 export const Wrapper = styled('section', {
     width: '100%',
-    padding: '5rem',
+    padding: '1rem',
+    paddingBlock: '5rem',
 
     '@mobile': {
         padding: '1rem',
