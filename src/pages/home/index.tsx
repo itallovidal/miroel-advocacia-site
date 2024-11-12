@@ -2,23 +2,22 @@ import { useLocation } from 'react-router-dom'
 import {Hero} from "./hero/hero.tsx";
 import {useEffect, useRef} from "react";
 import {About} from "./about/about.tsx";
+import {ServicesDetails} from "./servicesDetails/services-details.tsx";
 
 export function Home() {
   const { hash } = useLocation()
   const heroRef = useRef<HTMLDivElement>(null)
   const aboutRef = useRef<HTMLDivElement>(null)
-  // const techInfoRef = useRef<HTMLDivElement>(null)
+  const servicesDetailsRef = useRef<HTMLDivElement>(null)
   // const servicesRef = useRef<HTMLDivElement>(null)
-  // const servicesDetailsRef = useRef<HTMLDivElement>(null)
   // const courseRef = useRef<HTMLDivElement>(null)
   // const teamRef = useRef<HTMLDivElement>(null)
 
   const refMap = {
     '#home': heroRef,
     '#about': aboutRef,
-    // '#techInfo': techInfoRef,
+    '#serviceDetails': servicesDetailsRef,
     // '#services': servicesRef,
-    // '#serviceDetails': servicesDetailsRef,
     // '#course': courseRef,
     // '#team': teamRef,
   }
@@ -34,9 +33,8 @@ export function Home() {
     <div>
       <Hero ref={heroRef} />
       <About ref={aboutRef} />
+      <ServicesDetails ref={servicesDetailsRef} />
       {/*<Services ref={servicesRef} />*/}
-      {/*<TechInfo ref={techInfoRef} />*/}
-      {/*<ServicesDetails ref={servicesDetailsRef} />*/}
       {/*<Course ref={courseRef} />*/}
       {/*<Team ref={teamRef} />*/}
     </div>
