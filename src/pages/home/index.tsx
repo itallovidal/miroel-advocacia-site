@@ -6,6 +6,7 @@ import {ServicesDetails} from "./servicesDetails/services-details.tsx";
 import {Contact} from "./contact/contact.tsx";
 import {Recommendation} from "./recomendation/recommendation.tsx";
 import {Form} from "./form/form.tsx";
+import {Partners} from "./partners/partners.tsx";
 
 export function Home() {
   const { hash } = useLocation()
@@ -37,6 +38,7 @@ export function Home() {
       <Hero ref={heroRef} />
       <About ref={aboutRef} />
       <ServicesDetails ref={servicesDetailsRef} />
+      <Partners/>
       <Contact ref={contactRef} />
       <Recommendation ref={recommendationRef} />
       <Form ref={formRef}/>
