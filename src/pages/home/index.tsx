@@ -5,6 +5,7 @@ import {About} from "./about/about.tsx";
 import {ServicesDetails} from "./servicesDetails/services-details.tsx";
 import {Contact} from "./contact/contact.tsx";
 import {Recommendation} from "./recomendation/recommendation.tsx";
+import {Form} from "./form/form.tsx";
 
 export function Home() {
   const { hash } = useLocation()
@@ -12,14 +13,16 @@ export function Home() {
   const aboutRef = useRef<HTMLDivElement>(null)
   const servicesDetailsRef = useRef<HTMLDivElement>(null)
   const contactRef = useRef<HTMLDivElement>(null)
-  const recomendationRef = useRef<HTMLDivElement>(null)
+  const recommendationRef = useRef<HTMLDivElement>(null)
+  const formRef = useRef<HTMLDivElement>(null)
 
   const refMap = {
     '#home': heroRef,
     '#about': aboutRef,
     '#serviceDetails': servicesDetailsRef,
-    '#Recomendation': recomendationRef,
+    '#Recomendation': recommendationRef,
     '#contact': contactRef,
+    '#form': formRef,
   }
 
   useEffect(() => {
@@ -35,7 +38,8 @@ export function Home() {
       <About ref={aboutRef} />
       <ServicesDetails ref={servicesDetailsRef} />
       <Contact ref={contactRef} />
-      <Recommendation ref={recomendationRef} />
+      <Recommendation ref={recommendationRef} />
+      <Form ref={formRef}/>
     </div>
   )
 }

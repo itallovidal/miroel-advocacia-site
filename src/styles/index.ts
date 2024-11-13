@@ -29,6 +29,12 @@ export const globalStyles = globalCss({
         marginBottom: '2rem',
     },
 
+    h3: {
+        fontSize: '1.4rem',
+        fontWeight: 'normal',
+        marginBottom: '1rem',
+    },
+
     '*:link, *:active': {
         textDecoration: 'none',
     },
@@ -75,6 +81,11 @@ export const globalStyles = globalCss({
 
         h2: {
             fontSize: '1.5rem',
+            marginBottom: '1rem',
+        },
+
+        h3: {
+            fontSize: '1.15rem',
             marginBottom: '1rem',
         },
     },
