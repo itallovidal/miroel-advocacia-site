@@ -6,9 +6,9 @@ import {z} from 'zod'
 import {useForm} from "react-hook-form";
 import {Input} from "../../../global-components/input/input.tsx";
 import {zodResolver} from "@hookform/resolvers/zod";
-import {MailtrapSender} from "../../../lib/mailtrap";
+// import {MailtrapSender} from "../../../lib/mailtrap";
 
-const email = new MailtrapSender()
+// const email = new MailtrapSender()
 
 
 const schema = z.object({
