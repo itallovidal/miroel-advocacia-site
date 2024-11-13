@@ -1,5 +1,6 @@
 import { styled } from '../../../styles/theme.ts'
 import { Wrapper } from '../../../styles'
+import heroBackground from '../../../assets/images/hero-background.jpg'
 
 export const HeroWrapper = styled(Wrapper, {
   color: 'white',
@@ -9,13 +10,28 @@ export const HeroWrapper = styled(Wrapper, {
   backgroundColor: 'black',
   position: 'relative',
 
+  '&:before':{
+    content: ' ',
+    display: 'block',
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    width: '100%',
+    height: '100%',
+    opacity: 0.4,
+    backgroundImage: `url(${heroBackground})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover !important',
+    backgroundAttachment: 'fixed',
+    backgroundPositionY: 'bottom',
+  },
+
   '& > div': {
     flexDirection: 'column',
     justifyContent: 'center',
     height: '50vh',
     zIndex: 10,
     marginTop: '5.6rem',
-
   },
 })
 
@@ -51,19 +67,18 @@ export const HeroFooter = styled('div', {
   }
 })
 
-export const Watermark = styled('picture', {
-  position: 'absolute',
-  opacity: 0.7,
-  top: 0,
-  right: 0,
-  zIndex: 1,
-  width: '100%',
-  display: 'block',
-  backgroundColor: 'blue',
-
-  img: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-  },
-})
+// export const Watermark = styled('picture', {
+//   position: 'fixed',
+//   opacity: 0.7,
+//   top: 0,
+//   right: 0,
+//   zIndex: 1,
+//   width: '100%',
+//   display: 'block',
+//
+//   img: {
+//     width: '100%',
+//     height: '100%',
+//     objectFit: 'cover',
+//   },
+// })

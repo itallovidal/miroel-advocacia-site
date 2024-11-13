@@ -1,6 +1,5 @@
-import {HeroContent, HeroFooter, HeroWrapper, Watermark} from './style.ts'
+import {HeroContent, HeroFooter, HeroWrapper, } from './style.ts'
 import { forwardRef } from 'react'
-import heroBackground from '../../../assets/images/hero-background.jpg'
 import {MapPin} from "lucide-react";
 import {WhatsappIcon} from "../../../assets/whatsappIcon.tsx";
 
@@ -32,9 +31,9 @@ export const Hero = forwardRef<HTMLDivElement>((_, ref) => {
           </div>
 
         </HeroFooter>
-        <Watermark>
-          <img src={heroBackground} alt="" />
-        </Watermark>
+        {/*<Watermark>*/}
+        {/*  <img src={heroBackground} alt="" />*/}
+        {/*</Watermark>*/}
       </div>
     </HeroWrapper>
   )
