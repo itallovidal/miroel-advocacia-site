@@ -1,7 +1,7 @@
 import { Button } from '../../../styles'
 import { forwardRef } from 'react'
 import {AboutWrapper, FormContent, FormWrapper} from "./style.ts";
-import {Clock, Contact, Handshake} from "lucide-react";
+import {Clock, Contact, Handshake, Instagram} from "lucide-react";
 import {z} from 'zod'
 import {useForm} from "react-hook-form";
 import {Input} from "../../../global-components/input/input.tsx";
@@ -40,13 +40,13 @@ export const Form = forwardRef<HTMLDivElement>((_, ref) => {
                 <AboutWrapper>
                     <div>
                         <Contact />
-                        <h3>Faça sua Avaliação sem custo Agora!</h3>
+                        <h3>Faça sua Avaliação sem custo!</h3>
                     </div>
                     <div>
-                        <span>Endereço: Rua Rosalina Terra, 429 casa 3</span>
+                        <span>Rua Rosalina Terra, 429 casa 3</span>
                         <span>Portinho - Cabo Frio RJ</span>
-                        <span>Telefones: (22) 2041-0558 (22) 99988-1123</span>
-                        <span>Email: miroelspanaulinoadvocacia@gmail.com</span>
+                        <span>(22) 2041-0558 (22) 99988-1123</span>
+                        <span>miroelspanaulinoadvocacia@gmail.com</span>
                     </div>
                     <div>
                         <Clock />
@@ -61,8 +61,9 @@ export const Form = forwardRef<HTMLDivElement>((_, ref) => {
                         <Handshake />
                         <h3>Siga - nos</h3>
                     </div>
-                    <div>
-                        <span>Instagram</span>
+                    <div id={'social'}>
+                        <Instagram />
+                        <a href='https://www.instagram.com/miroelpaulinoadvocacia/'>Instagram</a>
                     </div>
 
                 </AboutWrapper>

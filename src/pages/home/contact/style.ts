@@ -11,12 +11,20 @@ export const ContactWrapper = styled(Wrapper, {
   },
   color: 'black',
   '@mobile': {
-    paddingTop: '7rem',
+    marginTop: 0,
 
     h2: {
       fontSize: '1rem',
       lineHeight: '1.8rem',
       fontWeight: 'bold',
+    },
+
+    '@mobile':{
+      h2:{
+        fontSize: '2rem',
+        textAlign: 'center',
+        lineHeight: '2.6rem',
+      },
     },
   },
 

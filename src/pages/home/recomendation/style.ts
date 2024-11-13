@@ -24,11 +24,8 @@ export const RecommendationWrapper = styled(Wrapper, {
     },
 
   '@mobile': {
-    // backgroundImage: `url(${coursebgmobile}) !important`,
-    paddingTop: '7rem',
+    paddingBlock: '5rem',
     h2: {
-      fontSize: '1rem',
-      lineHeight: '1.8rem',
       fontWeight: 'bold',
     },
   },
@@ -50,11 +47,15 @@ export const RecommendationContent = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   gap: '1rem',
-position: 'relative',
-zIndex: 2,
+    position: 'relative',
+    zIndex: 2,
 
     '& > div:nth-child(1) h2':{
       marginBottom: '0rem',
+    },
+
+    '@mobile':{
+        width: '100%',
     }
 })
 

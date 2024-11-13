@@ -9,6 +9,7 @@ export const FooterWrapper = styled(Wrapper, {
 
   '@mobile': {
     padding: '2rem',
+    marginBottom: '0rem',
   },
 
   '& > div': {
@@ -67,5 +68,11 @@ export const FooterContent = styled('div', {
   gap: '4rem',
   '& > *':{
     flex: 1,
+  },
+
+
+  '@mobile':{
+    flexDirection: 'column',
+    gap: '1rem',
   }
 })

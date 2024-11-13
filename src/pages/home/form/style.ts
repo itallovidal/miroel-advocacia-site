@@ -3,18 +3,19 @@ import { Wrapper } from '../../../styles'
 
 export const FormWrapper = styled(Wrapper, {
     color: 'black',
-    '@mobile': {
-        paddingTop: '7rem',
-
-        h2: {
-            fontSize: '1rem',
-            lineHeight: '1.8rem',
-            fontWeight: 'bold',
-        },
-    },
 
     '& > div': {
-        // justifyContent: 'center',
+        '@mobile': {
+            flexDirection: 'column',
+
+            h3: {
+                fontSize: '1rem',
+                lineHeight: '1.8rem',
+                fontWeight: 'bold',
+                textTransform: 'uppercase',
+            },
+        },
+
         alignItems: 'flex-start',
 
         p: {
@@ -27,6 +28,7 @@ export const FormWrapper = styled(Wrapper, {
 
 export const AboutWrapper = styled('div', {
     flexGrow: 1,
+
     '& span':{
         display: 'block',
     },
@@ -51,7 +53,14 @@ export const AboutWrapper = styled('div', {
         marginLeft: '1rem',
         borderLeft: '1px solid black',
         marginBottom: '1rem',
-    }
+    },
+
+    '#social':{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        gap: '1rem',
+    },
 
 })
 
@@ -59,5 +68,11 @@ export const FormContent = styled('form', {
     flexGrow: 1,
     '& button':{
         fontSize: '1rem',
+    },
+
+    '@mobile':{
+        marginTop: '2rem',
+        width: '100%',
+        textAlign: 'left',
     }
 })

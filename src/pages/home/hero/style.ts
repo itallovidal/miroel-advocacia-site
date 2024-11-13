@@ -10,6 +10,10 @@ export const HeroWrapper = styled(Wrapper, {
   backgroundColor: 'black',
   position: 'relative',
 
+  '@mobile':{
+    marginTop: '0rem !important',
+  },
+
   '&:before':{
     content: ' ',
     display: 'block',
@@ -24,7 +28,13 @@ export const HeroWrapper = styled(Wrapper, {
     backgroundSize: 'cover !important',
     backgroundAttachment: 'fixed',
     backgroundPositionY: 'bottom',
+
+    '@mobile':{
+      backgroundPositionY: 'center',
+      backgroundAttachment: 'initial',
+    },
   },
+
 
   '& > div': {
     flexDirection: 'column',
@@ -47,8 +57,19 @@ export const HeroContent = styled('div', {
     width: 'fit-content',
   },
 
+  '@mobile':{
+    h1:{
+      fontSize: '2.8rem',
+      textAlign: 'center',
+      textTransform: 'uppercase',
+      fontWeight: 'bold',
+    }
+  },
+
   p: {
-    maxWidth: '54ch',
+    maxWidth: '25ch',
+    color: '$gold500',
+    textAlign: 'center',
   },
 })
 
@@ -64,6 +85,14 @@ export const HeroFooter = styled('div', {
     display: 'flex',
     gap: '.5rem',
     alignItems: 'center',
+  },
+
+  '@mobile':{
+    flexDirection: 'column',
+
+    '& > div ':{
+      width: '100%',
+    },
   }
 })
 

@@ -3,7 +3,6 @@ import {Wrapper} from "../../../styles";
 
 export const SliderWrapper = styled(Wrapper, {
     color: 'black',
-
     '& > div': {
         flexDirection: 'column',
         justifyContent: 'center',
@@ -14,9 +13,14 @@ export const SliderWrapper = styled(Wrapper, {
             maxWidth: '64ch',
         },
     },
+
+    '@mobile':{
+        marginBlock: '0 !important',
+    }
 })
 
 export const Slider = styled('div', {
+
 })
 
 export const Brand = styled('picture', {

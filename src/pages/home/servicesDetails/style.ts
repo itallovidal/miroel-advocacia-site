@@ -24,7 +24,6 @@ export const ServicesWrapper = styled(Wrapper, {
 
 export const ServiceBox = styled('div', {
   background: '$gray100',
-  // width: 'calc(50% - .5rem)',
   transition: '200ms',
   cursor: 'pointer',
   flexGrow:1,

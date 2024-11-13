@@ -55,6 +55,12 @@ export const WrapperMobile = styled('div', {
     display: 'none',
   },
 
+  '@mobile':{
+    svg: {
+      color: 'white',
+    },
+  },
+
   variants: {
     display: {
       open: {

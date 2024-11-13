@@ -19,7 +19,7 @@ export const Hero = forwardRef<HTMLDivElement>((_, ref) => {
               <MapPin />
               <p>Localização</p>
             </div>
-            <h3>Endereço: Rua Rosalina Terra, 429 casa 3 Portinho - Cabo Frio RJ</h3>
+            <h3> Rua Rosalina Terra, 429 <br/> Casa 3, Portinho - Cabo Frio RJ</h3>
           </div>
 
           <div>

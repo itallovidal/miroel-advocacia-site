@@ -8,9 +8,9 @@ import image5 from '../../../assets/images/img (5).png'
 import image6 from '../../../assets/images/img (6).png'
 
 export function Partners(){
-    const animation = { duration: 20000, easing: (t) => t }
+    const animation = { duration: 20000 }
 
-    const [sliderRef, instanceRef] = useKeenSlider(
+    const [sliderRef] = useKeenSlider(
         {
             slides: {
                 perView: 3,
@@ -35,7 +35,7 @@ export function Partners(){
 
 
     return (
-        <SliderWrapper>
+        <SliderWrapper id={'partners'}>
             <div>
                 <h1>Principais clientes</h1>
                 <Slider ref={sliderRef} className="keen-slider">

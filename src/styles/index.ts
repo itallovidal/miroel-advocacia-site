@@ -55,10 +55,16 @@ export const globalStyles = globalCss({
         '-webkit-font-smoothing': 'antialiased',
         backgroundColor: '$gray900',
         color: '$gray100',
+
+        '@mobile':{
+            '#partners':{
+                marginBlock: 0
+            }
+        }
     },
 
     'body, input, textarea, button': {
-        fontFamily: 'Roboto Serif',
+        fontFamily: 'Source Serif 4", serif',
         fontWeight: 400,
     },
 
@@ -149,6 +155,7 @@ export const Wrapper = styled('section', {
 
     '@mobile': {
         padding: '1rem',
+        marginBlock: '4rem',
     },
 
     // variants: {
