@@ -6,6 +6,10 @@ import {z} from 'zod'
 import {useForm} from "react-hook-form";
 import {Input} from "../../../global-components/input/input.tsx";
 import {zodResolver} from "@hookform/resolvers/zod";
+import {MailtrapSender} from "../../../lib/mailtrap";
+
+const email = new MailtrapSender()
+
 
 const schema = z.object({
     name: z.string({
@@ -22,16 +26,17 @@ const schema = z.object({
     }),
 })
 
-interface ISchema extends z.infer<typeof schema>{}
+export interface IFormSchema extends z.infer<typeof schema>{}
 
 
 export const Form = forwardRef<HTMLDivElement>((_, ref) => {
-    const {register, handleSubmit, formState: {errors}} = useForm<ISchema>({
+    const {register, handleSubmit, formState: {errors}} = useForm<IFormSchema>({
         resolver: zodResolver(schema)
     })
 
-    async function sendForm(data: ISchema){
+    async function sendForm(data: IFormSchema){
         console.log(data)
+        // await email.sendEmail(data)
     }
 
     return (
