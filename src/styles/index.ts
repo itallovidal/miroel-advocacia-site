@@ -33,6 +33,12 @@ export const globalStyles = globalCss({
         fontSize: '1.4rem',
         fontWeight: 'normal',
         marginBottom: '1rem',
+        lineHeight: '2rem',
+    },
+
+    h4: {
+        fontSize: '1rem',
+        fontWeight: 'normal',
     },
 
     '*:link, *:active': {
@@ -54,6 +60,13 @@ export const globalStyles = globalCss({
     'body, input, textarea, button': {
         fontFamily: 'Roboto Serif',
         fontWeight: 400,
+    },
+
+    'svg':{
+        color: '$gold500',
+    },
+    'a, button, p, span':{
+        fontFamily: 'Roboto, sans-serif',
     },
 
     picture: {
@@ -102,8 +115,9 @@ export const Button = styled('button', {
     variants: {
         variantType: {
             dark: {
-                background: 'black',
+                background: '$gold500',
                 color: 'white',
+                fontFamily: 'Roboto, sans-serif',
 
                 '&:hover': {
                     background: 'white',
@@ -137,23 +151,23 @@ export const Wrapper = styled('section', {
         padding: '1rem',
     },
 
-    variants: {
-        background: {
-            white: {
-                background: 'white',
-            },
-            black: {
-                background: 'black',
-            },
-            gray: {
-                background: '#161616',
-            },
-        },
-    },
-
-    defaultVariants: {
-        background: 'white',
-    },
+    // variants: {
+    //     background: {
+    //         white: {
+    //             background: 'white',
+    //         },
+    //         black: {
+    //             background: 'black',
+    //         },
+    //         gray: {
+    //             background: '#161616',
+    //         },
+    //     },
+    // },
+    //
+    // defaultVariants: {
+    //     background: 'white',
+    // },
 
     '& > div': {
         maxWidth: '68.75rem',

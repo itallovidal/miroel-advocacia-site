@@ -4,7 +4,8 @@ import { Wrapper } from '../../styles'
 export const FooterWrapper = styled(Wrapper, {
   width: '100%',
   padding: '6rem',
-  background: 'white',
+  background: 'black',
+  color: 'white',
 
   '@mobile': {
     padding: '2rem',
@@ -16,6 +17,7 @@ export const FooterWrapper = styled(Wrapper, {
     margin: '0 auto',
     display: 'flex',
     justifyContent: 'space-between',
+    color: 'white',
 
     '@mobile': {
       flexDirection: 'column',
@@ -37,16 +39,33 @@ export const AddressWrapper = styled('div', {
     flexDirection: 'column',
     alignItems: 'flex-start',
   },
+
+  '& > div > p:first-child': {
+    fontFamily: 'Roboto-serif, serif'
+  },
 })
 
 export const ContactWrapper = styled('div', {
   display: 'flex',
   gap: '1rem',
   flexDirection: 'column',
-  alignItems: 'flex-end',
-  color: 'black',
+  marginBlock: '1rem',
+  '& a':{
+    color: 'white',
+  },
 
   '@mobile': {
     alignItems: 'flex-start',
   },
+})
+
+export const FooterContent = styled('div', {
+  display: 'flex',
+  alignItems: 'flex-start',
+  width: '100%',
+  justifyContent: 'space-between',
+  gap: '4rem',
+  '& > *':{
+    flex: 1,
+  }
 })

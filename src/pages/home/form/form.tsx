@@ -72,9 +72,9 @@ export const Form = forwardRef<HTMLDivElement>((_, ref) => {
                     <p>Descreva seu caso, vamos lhe ajudar.</p>
 
                     <Input {...register('name')} errorMessage={errors.name?.message} field={'Nome'}/>
-                    <Input {...register('email')} errorMessage={errors.email?.message} field={'Nome'}/>
-                    <Input {...register('phone')} errorMessage={errors.phone?.message} field={'Nome'}/>
-                    <Input {...register('text')} errorMessage={errors.text?.message} field={'Nome'}/>
+                    <Input {...register('email')} errorMessage={errors.email?.message} field={'Email'}/>
+                    <Input {...register('phone')} errorMessage={errors.phone?.message} field={'Telefone'}/>
+                    <Input isMultiline {...register('text')} errorMessage={errors.text?.message} field={'Descrição'}/>
                     <Button  variantType={'dark'}>Enviar meu caso</Button>
                 </FormContent>
             </div>

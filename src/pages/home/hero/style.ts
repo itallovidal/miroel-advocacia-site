@@ -6,7 +6,7 @@ export const HeroWrapper = styled(Wrapper, {
   minHeight: '60vh',
   zIndex: 10,
   padding: '2rem',
-  backgroundColor: 'red',
+  backgroundColor: 'black',
   position: 'relative',
 
   '& > div': {
@@ -14,6 +14,8 @@ export const HeroWrapper = styled(Wrapper, {
     justifyContent: 'center',
     height: '50vh',
     zIndex: 10,
+    marginTop: '5.6rem',
+
   },
 })
 
@@ -42,6 +44,11 @@ export const HeroFooter = styled('div', {
   borderTop: '1px solid rgba(255, 255, 255, 0.2)',
   paddingTop: '1rem',
 
+  '& > div > div':{
+    display: 'flex',
+    gap: '.5rem',
+    alignItems: 'center',
+  }
 })
 
 export const Watermark = styled('picture', {

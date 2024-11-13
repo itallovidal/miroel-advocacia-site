@@ -4,7 +4,7 @@ import { AboutDetails, AboutWrapper, ProfileWrapper } from './style.ts'
 
 export const About = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <AboutWrapper ref={ref} id={'about'} background={'gray'}>
+    <AboutWrapper ref={ref} id={'about'}>
       <div>
         <AboutDetails>
           <div>

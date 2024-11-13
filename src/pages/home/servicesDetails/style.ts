@@ -11,18 +11,27 @@ export const BoxWrapper = styled('div', {
 })
 
 export const ServicesWrapper = styled(Wrapper, {
+  background: '$gray200',
   '& > div': {
     flexDirection: 'column',
     gap: '2rem',
     alignItems: 'center',
+    color: 'black',
   },
+
+
 })
 
 export const ServiceBox = styled('div', {
-  backgroundColor: 'black',
-  color: 'white',
+  background: '$gray100',
   // width: 'calc(50% - .5rem)',
+  transition: '200ms',
+  cursor: 'pointer',
   flexGrow:1,
+  '&:hover': {
+    color: 'white',
+    background: 'black',
+  },
 
   '@mobile': {
     width: '100%',

@@ -8,6 +8,7 @@ export const RecommendationWrapper = styled(Wrapper, {
   backgroundSize: 'cover !important',
   backgroundRepeat: 'no-repeat !important',
   backgroundPositionX: 'left',
+  backgroundPositionY: 'center',
     position: 'relative',
 
     '&:before':{

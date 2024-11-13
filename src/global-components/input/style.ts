@@ -12,6 +12,9 @@ export const TextArea = styled('textarea', {
     height: '100%',
     lineHeight: '2rem',
     gap: 12,
+    backgroundColor: '$gray200',
+    padding: '.5rem',
+    border: '1px solid $gray400',
 })
 
 export const ErrorMessage = styled('span', {
@@ -20,5 +23,6 @@ export const ErrorMessage = styled('span', {
 
 export const CustomInput = styled('input', {
     padding: '.5rem',
-    backgroundColor: 'gray',
+    backgroundColor: '$gray200',
+    border: '1px solid $gray400',
 })

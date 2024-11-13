@@ -5,6 +5,11 @@ import coursebgmobile from '../../../assets/background_couse_mobile.jpg'
 
 export const ContactWrapper = styled(Wrapper, {
 
+  '& #free':{
+    textTransform: 'uppercase',
+    fontWeight: 'bold',
+  },
+  color: 'black',
   '@mobile': {
     paddingTop: '7rem',
 

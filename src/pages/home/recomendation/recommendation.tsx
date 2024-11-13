@@ -5,12 +5,12 @@ import { forwardRef } from 'react'
 
 export const Recommendation = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <RecommendationWrapper ref={ref} id={'recomendation'} background={'black'}>
+    <RecommendationWrapper ref={ref} id={'recomendation'}>
       <div>
 
         <RecommendationContent>
           <div>
-            <p>Olhamos para a lei de maneira diferente</p>
+            {/*<p>Olhamos para a lei de maneira diferente</p>*/}
             <h2>
               O que nossos clientes dizem
             </h2>

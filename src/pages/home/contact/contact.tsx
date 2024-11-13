@@ -16,7 +16,7 @@ export const Contact = forwardRef<HTMLDivElement>((_, ref) => {
         </Separator>
 
         <h2>
-          Obtenha sua primeira consulta <span id={'free'}>Gratuita!</span>
+          Obtenha sua primeira consulta <span id={'free'}>gratuita</span>
         </h2>
 
         <Button variantType={'dark'}>Solicitar Agendamento</Button>

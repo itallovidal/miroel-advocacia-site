@@ -2,6 +2,7 @@ import { styled } from '../../../styles/theme.ts'
 import { Wrapper } from '../../../styles'
 
 export const FormWrapper = styled(Wrapper, {
+    color: 'black',
     '@mobile': {
         paddingTop: '7rem',
 
@@ -15,7 +16,6 @@ export const FormWrapper = styled(Wrapper, {
     '& > div': {
         // justifyContent: 'center',
         alignItems: 'flex-start',
-        gap: '3rem',
 
         p: {
             marginBottom: '1rem',
@@ -26,6 +26,7 @@ export const FormWrapper = styled(Wrapper, {
 
 
 export const AboutWrapper = styled('div', {
+    flexGrow: 1,
     '& span':{
         display: 'block',
     },

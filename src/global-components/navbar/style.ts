@@ -4,9 +4,16 @@ export const WrapperDesktop = styled('div', {
   width: '100%',
   padding: '1rem',
   background: 'black',
+  position: 'fixed',
+  top: 0,
+  zIndex: 100,
 
   '@mobile': {
     display: 'none',
+  },
+
+  '&  button': {
+    fontSize: '1rem',
   },
 
   '& > div': {
@@ -15,6 +22,8 @@ export const WrapperDesktop = styled('div', {
     margin: '0 auto',
     display: 'flex',
     justifyContent: 'space-between',
+    paddingInline: '2rem',
+
   },
 
   picture: {

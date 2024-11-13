@@ -1,10 +1,12 @@
 import {HeroContent, HeroFooter, HeroWrapper, Watermark} from './style.ts'
 import { forwardRef } from 'react'
 import heroBackground from '../../../assets/images/hero-background.jpg'
+import {MapPin} from "lucide-react";
+import {WhatsappIcon} from "../../../assets/whatsappIcon.tsx";
 
 export const Hero = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <HeroWrapper ref={ref} id={'home'} background={'black'}>
+    <HeroWrapper ref={ref} id={'home'}>
       <div>
         <HeroContent>
           <p>
@@ -14,12 +16,18 @@ export const Hero = forwardRef<HTMLDivElement>((_, ref) => {
         </HeroContent>
         <HeroFooter>
           <div>
-            <p>Localização</p>
+            <div>
+              <MapPin />
+              <p>Localização</p>
+            </div>
             <h3>Endereço: Rua Rosalina Terra, 429 casa 3 Portinho - Cabo Frio RJ</h3>
           </div>
 
           <div>
-            <p>Whatsapp</p>
+            <div>
+              <WhatsappIcon/>
+              <p>Whatsapp</p>
+            </div>
             <h3>22 99988-1123</h3>
           </div>
 
