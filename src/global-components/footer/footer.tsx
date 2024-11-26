@@ -14,7 +14,6 @@ export function Footer() {
             <div>
               <p>15 ANOS DE ATENDIMENTO</p>
               <p>Prestamos consultoria jurídica a clientes de todo o estado do Rio de Janeiro há mais de 15 anos.</p>
-              <p>contato@alfaeomegatecnologia.com</p>
             </div>
           </AddressWrapper>
 

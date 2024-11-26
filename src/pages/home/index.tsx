@@ -37,11 +37,11 @@ export function Home() {
     <div>
       <Hero ref={heroRef} />
       <About ref={aboutRef} />
-      <ServicesDetails ref={servicesDetailsRef} />
       <Partners/>
+      <ServicesDetails ref={servicesDetailsRef} />
       <Contact ref={contactRef} />
       <Recommendation ref={recommendationRef} />
-      <Form />
+      <Form ref={formRef} />
     </div>
   )
 }

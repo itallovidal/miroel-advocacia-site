@@ -2,14 +2,11 @@ import { Button } from '../../../styles'
 import { BoxWrapper, ServiceBox, ServicesWrapper } from './style.ts'
 import { forwardRef } from 'react'
 import empresarialPic from '../../../assets/images/empresarial.png'
-import trabalhistaPic from '../../../assets/images/trabalhista.png'
+import trabalhistaPic from '../../../assets/images/trabalhista.jpg'
 import civilPic from '../../../assets/images/civil.png'
 import criminalPic from '../../../assets/images/criminal.png'
 
 export const ServicesDetails = forwardRef<HTMLDivElement>((_, ref) => {
-  const handleRedirect = () => {
-    window.location.href = "https://wa.me/5522999797009";
-  };
 
   return (
     <ServicesWrapper ref={ref} id={'serviceDetails'}>
@@ -62,7 +59,6 @@ export const ServicesDetails = forwardRef<HTMLDivElement>((_, ref) => {
           </ServiceBox>
 
         </BoxWrapper>
-        <Button onClick={handleRedirect}>Solicitar Agendamento</Button>
       </div>
     </ServicesWrapper>
   )

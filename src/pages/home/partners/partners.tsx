@@ -12,9 +12,9 @@ export function Partners(){
     const [sliderRef] = useKeenSlider(
         {
             slides: {
-                perView: 3,
+                perView: 4,
             },
-            // loop: true,
+            loop: true,
             renderMode: "performance",
             drag: true,
             created(s) {
