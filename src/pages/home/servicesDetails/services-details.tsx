@@ -7,6 +7,10 @@ import civilPic from '../../../assets/images/civil.png'
 import criminalPic from '../../../assets/images/criminal.png'
 
 export const ServicesDetails = forwardRef<HTMLDivElement>((_, ref) => {
+  const handleRedirect = () => {
+    window.location.href = "https://wa.me/5522999797009";
+  };
+
   return (
     <ServicesWrapper ref={ref} id={'serviceDetails'}>
       <div>
@@ -58,7 +62,7 @@ export const ServicesDetails = forwardRef<HTMLDivElement>((_, ref) => {
           </ServiceBox>
 
         </BoxWrapper>
-        <Button>Solicitar Agendamento</Button>
+        <Button onClick={handleRedirect}>Solicitar Agendamento</Button>
       </div>
     </ServicesWrapper>
   )

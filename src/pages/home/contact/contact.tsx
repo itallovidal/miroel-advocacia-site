@@ -2,7 +2,12 @@ import {ContactWrapper, Separator} from './style.ts'
 import { Button } from '../../../styles'
 import { forwardRef } from 'react'
 
+
 export const Contact = forwardRef<HTMLDivElement>((_, ref) => {
+  const handleRedirect = () => {
+    window.location.href = "https://wa.me/5522999797009";
+  };
+
   return (
     <ContactWrapper ref={ref} id={'contact'} >
       <div>
@@ -19,7 +24,7 @@ export const Contact = forwardRef<HTMLDivElement>((_, ref) => {
           Obtenha sua primeira consulta <span id={'free'}>gratuita</span>
         </h2>
 
-        <Button variantType={'dark'}>Solicitar Agendamento</Button>
+          <Button onClick={handleRedirect} variantType={'dark'}>Solicitar Agendamento</Button>
       </div>
     </ContactWrapper>
   )

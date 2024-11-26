@@ -1,6 +1,7 @@
 {
   "name": "miroel-paulino-site",
   "private": true,
+  "homepage": "https://mpadvempresarial.com.br/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

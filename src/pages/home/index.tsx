@@ -41,7 +41,7 @@ export function Home() {
       <Partners/>
       <Contact ref={contactRef} />
       <Recommendation ref={recommendationRef} />
-      <Form ref={formRef}/>
+      <Form />
     </div>
   )
 }

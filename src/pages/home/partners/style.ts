@@ -24,5 +24,10 @@ export const Slider = styled('div', {
 })
 
 export const Brand = styled('picture', {
-
+    objectFit: 'contain',
+    img:{
+        objectFit: 'contain',
+        height: '100%',
+        maxHeight: 70
+    }
 })
