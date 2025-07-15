@@ -1,10 +1,11 @@
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-    readonly MAILTRAP_AUTH_USER: string
-    readonly MAILTRAP_AUTH_PASS: string
+  readonly VITE_EMAILJS_SERVICE_ID: string;
+  readonly VITE_EMAILJS_TEMPLATE_ID: string;
+  readonly VITE_EMAILJS_PUBLIC_KEY: string;
 }
 
 interface ImportMeta {
-    readonly env: ImportMetaEnv
+  readonly env: ImportMetaEnv;
 }
