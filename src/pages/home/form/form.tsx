@@ -8,6 +8,7 @@ import { Input } from "../../../global-components/input/input.tsx";
 import { zodResolver } from "@hookform/resolvers/zod";
 import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
 import { env } from "../../../../env.ts";
+import { toast } from "sonner";
 
 const schema = z.object({
   name: z
@@ -55,13 +56,13 @@ export const Form = forwardRef<HTMLDivElement>((_, ref) => {
           publicKey: env.VITE_EMAILJS_PUBLIC_KEY,
         }
       );
-      console.log("SUCCESS!");
+      toast.success("Email enviado com sucesso!");
     } catch (err) {
       if (err instanceof EmailJSResponseStatus) {
-        console.log("EMAILJS FAILED...", err);
+        toast.error("Erro ao enviar email!");
         return;
       }
-      console.log("ERROR", err);
+      toast.error("Erro ao enviar email!");
     }
   }
 
